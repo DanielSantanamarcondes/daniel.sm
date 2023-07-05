@@ -39,9 +39,10 @@
     padding: lem;
     background-color: var(--branco);
 }
-    .lista-menu__titulo {
+.lista-menu__titulo {
         color:var(--laranja)
-    }
+        font-weight: 700;
+}
 .container__botao:checked ~ .lista menu {
     display: block;
 }
