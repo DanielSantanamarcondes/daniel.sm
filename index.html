@@ -50,10 +50,36 @@ rel="stylesheet">
 </header>
 <section class="banner">
     <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da AluraBooks"></div>
+      <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javaScript da AluraBooks"></div>
+      <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da AluraBooks"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
     <p claas="banner__texto">Encontre em nossa estante que precisa para seu desenvolvimento!</p>
     <input type="search" class="banner__pesquisa"placeholder="Qual sera sua proxima leitura?">
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+});
+</script>
 </body>
 </html>
